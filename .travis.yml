@@ -13,7 +13,6 @@ install:
   - python setup.py develop
 
 script:
-  - flake8 src test --ignore=E501
   - coverage run --source=contexts -m contexts -v
 
 after_success:
